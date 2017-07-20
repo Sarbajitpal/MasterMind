@@ -1,0 +1,22 @@
+<div>
+	<table width="100%">
+	<tr>
+	<th>Caption</th>
+	<th>Leauge</th>
+	<th>Year</th>
+	<th>Current Match Day</th>
+	<th>Number Of Match days</th>
+	<th>Number Of Teams</th>
+	<th>Number Of Games</th>
+	</tr>
+	<tr ng-repeat="(key,value) in competitionData">
+	  <td><span ng-click="redirect(value.id);" class = "caption" ng-bind="value.caption"></td>
+	  <td ng-bind="value.league"></td>
+	  <td ng-bind="value.year"></td>
+	  <td ng-bind="value.currentMatchday"></td>
+	  <td ng-bind="value.numberOfMatchdays"></td>
+	  <td ng-bind="value.numberOfTeams"></td>
+	  <td ng-bind="value.numberOfGames"></td>
+	</tr>
+	</table>
+</div> 

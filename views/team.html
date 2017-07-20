@@ -1,0 +1,34 @@
+<div>
+	<table width="100%">
+	<tr>
+	<th>Name</th>
+	<th>Nationality</th>
+	<th>Position</th>
+	<th>Jersey No.</th>
+	<th>Contract Until</th>
+	</tr>
+	<tr ng-repeat="(key,value) in playersData">
+	<td ng-bind="value.name"></td>
+	<td ng-bind="value.nationality"></td>
+	<td ng-bind="value.position"></td>
+	<td ng-bind="value.jerseyNumber"></td>
+	<td ng-bind="value.contractUntil"></td>
+	</tr>
+	</table>
+
+	<div style="padding-top: 50px;">
+		<table width="100%">
+			<tr>
+				<th>Home Team</th>
+				<th>Away Team</th>
+				<th>Timer</th>
+			</tr>
+			
+		<tr ng-repeat="x in fixturesData">
+	        <td ng-bind="x.homeTeamName"></td>
+			<td ng-bind="x.awayTeamName"></td>
+	        <td ng-bind="x.countDown"></td>
+    	</tr> 
+		</table>
+	</div>
+</div> 

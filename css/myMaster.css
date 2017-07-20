@@ -1,0 +1,16 @@
+#maindiv
+	{
+		width:900px;
+		height:2300;
+		padding:10px 10px;
+		margin: auto auto;
+	}
+.caption {
+    color: blue;
+}
+.caption:hover {
+    text-decoration:  underline;
+    cursor: pointer; 
+    cursor: hand;
+}
+

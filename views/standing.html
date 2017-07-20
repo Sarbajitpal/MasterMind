@@ -1,0 +1,31 @@
+<div>
+	<table width="100%">
+	<tr>
+		
+		<th>Club</th>
+		<th>Games Played</th>
+		<th>Wins</th>
+		<th>Draws</th>
+		<th>Lost</th>
+		<th>Goal</th>
+		<th>GD</th>
+		<th>GA</th>
+		<th>Points</th>
+		<th></th>
+	</tr>
+	<tr ng-repeat="(key,value) in leaugeData">
+	
+	<td ng-bind="value.teamName" class = "caption" ng-click="redirect(value._links.team.href);"></td>
+	  <td ng-bind="value.playedGames" ></td>
+	  <td ng-bind="value.wins"></td>
+	  <td ng-bind="value.draws"></td>
+	  <td ng-bind="value.losses"></td>
+	  <td ng-bind="value.goals"></td>
+	  <td ng-bind="value.goalDifference"></td>
+	  <td ng-bind="value.goalsAgainst"></td>
+	  <td ng-bind="value.points"></td>
+
+	  <td><img  ng-src="{{value.crestURI}}" width="20px" height="20px"></td>
+	</tr>
+	</table>
+</div> 
